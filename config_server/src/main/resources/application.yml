@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/WangYaTao-0911/spring_cloud_day8.git
+          search-paths:
+            - configfiles
+      label: master
+server:
+  port: 8888
